@@ -1,0 +1,133 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap' );
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+body { 
+  background-color: #eeeeee;
+}
+img {
+  width: 100%;
+}
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.container-custom {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.popup {
+  width: 15rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  background-color: #EDF2FB;
+  border: 1px solid dimgray;
+  position: absolute;
+  top: -25%;
+  right: 2%;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.popup.show {
+  top: 0%;
+  /* right: 0%; */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.online-alert {
+  box-shadow: 5px -5px 0px 0px greenyellow;
+}
+.offline-alert {
+  box-shadow: 5px -5px 0px 0px crimson;
+}
+.connection-status {
+  display: flex;
+  align-items: center;
+}
+.connection-status .title {
+  width: 80%;
+}
+.wifi-icon {
+  height: clamp( 3.5rem, 2.5vw, 4.5rem );
+  width: clamp( 3.5rem, 2.5vw, 4.5rem );
+  border-radius: 50%;
+
+  position: relative;
+}
+.online {
+  background-color: greenyellow;
+}
+.offline {
+  background-color:crimson;
+  color: white;
+}
+.wifi-icon .uil {
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  position: absolute;
+
+  font-size: 2rem;
+}
+.title {
+  font-size: 1.125rem;
+  padding-left: 1rem;
+}
+.desc {
+  margin-block: 1rem;
+}
+.btn-section {
+  display: flex;
+  justify-content: flex-end;
+}
+.reconnect {
+  display: none;
+  margin-left: auto;
+  padding: 1rem;
+  font-weight: 400;
+  color: white;
+  background-color: #3E7CB1;
+  border-radius: .5rem;
+}
+
+.helpers {
+  padding: 1rem;
+  margin-block: 1.5rem;
+  border: 1px solid dimgray;
+  box-shadow: 5px -5px 0px 0px dimgray;
+  background-color: #EDF2FB;
+}
+.heading-title {
+  font-size: 1.5rem;
+}
+.browser-settings {
+  padding-block: 1rem;
+}
+.browser-settings .desc {
+  font-weight: 600;
+}
+.img {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
